@@ -1,0 +1,16 @@
+#drawingBoard {
+    border: 0.5rem black solid;
+    height: 30rem;
+    width: 30rem;
+    display: grid;
+}
+
+.square {
+    /* height: 2rem;
+    width: 2rem; */
+    background-color: white;
+}
+
+.square:hover {
+    background-color: rgb(121, 39, 39);
+}
