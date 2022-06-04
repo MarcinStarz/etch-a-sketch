@@ -1,6 +1,7 @@
-let drawingBoard = document.querySelector("#drawingBoard");
+let drawingBoard = document.querySelector('#drawingBoard');
 let sliderAmount = document.querySelector('#sliderAmount');
-let square = '';
+let square = document.createElement("div");
+square.classList.add("square");
 let elements = '';  
 
 // Initial canvas 16x16
@@ -13,11 +14,11 @@ let gridTemplateColumns = "repeat(" + inputAmount.toString() +', 1fr)'
 drawingBoard.style.gridTemplateColumns = gridTemplateColumns;
 
 // Create squares within canvas
-for (let i = 0; i <= elements; i++) {
+for (let i = 0; i < elements; i++) {
     square = document.createElement("div");
     square.classList.add("square");
     drawingBoard.appendChild(square);
-};
+}; 
 
 // Slider function: clear board and change size of the canvas
 sliderAmount.addEventListener('change', function(e) {
@@ -42,4 +43,15 @@ sliderAmount.addEventListener('change', function(e) {
         square.classList.add("square");
         drawingBoard.appendChild(square);
     };
+
+    coloring();
 });
+
+// Change color on click
+function coloring() { let colorSquare = document.querySelectorAll('.square');
+for (let i = 0; i < colorSquare.length; i++) {
+    colorSquare[i].addEventListener('mouseover', function(e) {
+        event.target.style.backgroundColor = 'black';
+     });
+}};
+coloring();
