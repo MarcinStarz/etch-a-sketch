@@ -6,11 +6,5 @@
 }
 
 .square {
-    /* height: 2rem;
-    width: 2rem; */
     background-color: white;
-}
-
-.square:hover {
-    background-color: rgb(121, 39, 39);
 }
