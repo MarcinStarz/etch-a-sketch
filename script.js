@@ -1,12 +1,12 @@
 let drawingBoard = document.querySelector('#drawingBoard');
 let sliderAmount = document.querySelector('#sliderAmount');
+let label = document.querySelector('.label');
 let colorPicker = document.querySelector('.color-picker');
 let pickedColor = '#000000';
 let resetButton = document.querySelector('.reset-button');
 let square = document.createElement("div");
 square.classList.add("square");
-let elements = '';  
-
+let elements = '';
 
 // Create squares within canvas
 function createElements() {
@@ -31,6 +31,7 @@ for (let i = 0; i < colorSquare.length; i++) {
 
 // Reset buttons
 resetButton.addEventListener('click', function() {
+    sliderAmount.value = 16;
     reset();
     afterResetCanvas();
     createElements();
@@ -50,6 +51,7 @@ function reset() {
 function afterResetCanvas() {
     let inputAmount = 16;
     elements = inputAmount*inputAmount;
+    label.textContent = inputAmount.toString() + " x " + inputAmount.toString();
     // Assign grid style and numbers of columns
     let gridTemplateColumns = "repeat(" + inputAmount.toString() +', 1fr)'
     drawingBoard.style.gridTemplateColumns = gridTemplateColumns;
@@ -57,9 +59,8 @@ function afterResetCanvas() {
 
 // Initial canvas 16x16
 let inputAmount = 16;
-console.log(inputAmount);
 elements = inputAmount*inputAmount;
-console.log(elements);
+label.textContent = inputAmount.toString() + " x " + inputAmount.toString();
 // Assign grid style and numbers of columns
 let gridTemplateColumns = "repeat(" + inputAmount.toString() +', 1fr)'
 drawingBoard.style.gridTemplateColumns = gridTemplateColumns;
@@ -74,9 +75,8 @@ sliderAmount.addEventListener('change', function(e) {
     
     // Take the value
     inputAmount = Number(e.target.value);
-    console.log(inputAmount);
     elements = inputAmount*inputAmount;
-    console.log(elements);
+    label.textContent = inputAmount.toString() + " x " + inputAmount.toString();
     // Assign grid style and numbers of columns
     gridTemplateColumns = "repeat(" + inputAmount.toString() +', 1fr)'
     drawingBoard.style.gridTemplateColumns = gridTemplateColumns;
