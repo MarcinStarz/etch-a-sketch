@@ -36,7 +36,7 @@ resetButton.addEventListener('click', function() {
     afterResetCanvas();
     createElements();
     draw();
-    pickedColor = '#000000';
+    colorPicker.value = '#000000';
 });
 
 // Clear the drawing board function
