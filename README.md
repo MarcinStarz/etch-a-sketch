@@ -2,7 +2,7 @@
 It's my another project for learning purposes. You can pick a color, change canvas size and draw!
 
 # LIVE DEMO:
-
+https://marcinstarz.github.io/etch-a-sketch/
 
 # What I've learnt
 - Styling HTMLInputElement
