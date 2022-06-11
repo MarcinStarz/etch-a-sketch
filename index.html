@@ -4,16 +4,22 @@
         <meta charset="utf-8">
         <title>Etch-a-sketch</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
     </head>
     <body>
-        <input type="button" class="reset-button" value="RESET">
-        <input type="color" class="color-picker" value="#000000">
-       <div id="sliderContainer">
-            <input type="range" min="1" max="100" value="16" id="sliderAmount">
-            <label for="sliderAmount" class="label">Canvas size: <span class="canvasSize"></span></label>
-       </div>
-        <div id="drawingBoard">
+        <h1>Etch-a-sketch</h1>
+            <div id="functions">
+                <input type="color" class="color-picker" value="#000000">
+                <div id="sliderContainer">
+                <input type="range" min="1" max="100" value="16" id="sliderAmount">
+            </div>
+            <input type="button" class="reset-button" value="RESET">
         </div>
+        <div id="drawingBoard"></div>
+        <label for="sliderAmount" class="label"></label>
         <script src="script.js"></script>
     </body>
 </html>
