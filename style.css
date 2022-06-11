@@ -15,7 +15,8 @@ body {
 
 h1 {
     text-align: center;
-    font-family: 'Fredoka One', cursive;;
+    font-family: 'Fredoka One', cursive;
+    font-size: 3.5rem;
     color: #d1a773;
     text-shadow: 3px 3px #3d2f21;
 }
@@ -25,10 +26,45 @@ h1 {
     -moz-appearance: none;
     appearance: none;
     border: none;
+    border-radius: 5px;
+    background-color: #d1a773;
+    box-shadow: 3px 3px #3d2f21;
 }
 
 #sliderAmount {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 20px;
+    background-color: #d1a77396;
+}
 
+#sliderAmount::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #d1a773;
+    border-radius: 20px;
+    border: 4px #3d2f21 solid;
+}
+
+#sliderAmount::-moz-range-thumb  {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #d1a773;
+    border-radius: 20px;
+    border: 4px #3d2f21 solid;
+}
+
+.label {
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'Fredoka One', cursive;
+    color: #3d2f21;
 }
 
 .reset-button {
