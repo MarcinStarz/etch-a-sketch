@@ -6,7 +6,7 @@ It's my another project for learning purposes. You can pick a color, change canv
 
 # What I've learnt
 - Styling HTMLInputElement
-- I improved my DOM manipulation knowldge (operating with event listeners)
+- I improved my DOM manipulation knowledge (operating with event listeners)
 
 # What do I need to learn
 - The difference between function expression and function declaration
