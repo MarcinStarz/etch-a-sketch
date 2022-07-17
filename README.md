@@ -1,5 +1,5 @@
 # Etch-a-sketch project
-It's my another project for learning purposes. You can pick a color, change canvas size and draw!
+It's my another project for learning purposes. You can pick a color, change canvas size and draw! The Etch-a-sketch works only on desktop.
 
 # LIVE DEMO:
 https://marcinstarz.github.io/etch-a-sketch/
